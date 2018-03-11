@@ -32,9 +32,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-  var productOfTwoNumbers = a * b;
-  var proString = 'The product of ' + a + ' and ' + b + 'is' + productOfTwoNumbers + '.';
-  return [productOfTwoNumbers, proString];
+  var productOfNum = a*b;
+  var proString = 'The product of ' + a + ' and ' + b + ' is ' + productOfNum + '.';
+  return [productOfNum, proString];
 }
 
 // Here is the test for multiply(); uncomment it to run it
