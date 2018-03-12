@@ -109,11 +109,16 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(testArray) { //eslint-disable-line
-
+function multiplyArray(productArray){ //eslint-disable-line
+  var index1 = productArray[0];
+  var index2 = productArray[1];
+  var index3 = productArray[2];
+  var product = index1 * index2 * index3;
+  var message = ('The numbers ' + index1 + ',' + index2 + ',' + index3 + ' have a product of ' + product + '.');
+  return[product, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
